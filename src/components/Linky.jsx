@@ -66,51 +66,6 @@ function Linky({ nu }) {
                       </div>
                     </div>
                   </div>
-                  
-                  <div>
-                    <div>
-                      <div>
-                        <div>
-                          <div>
-                            <div>
-                              <div>
-                                <div>
-                                  <div>
-                                    <div>
-                                      <div>Lmao, nu aici linkul</div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div>
-                    <div>
-                      <div>
-                        <div>
-                          <div>
-                            <div>
-                              <div>
-                                <div>
-                                  <div>
-                                    <div>
-                                      <div>Lmao, nu aici linkul</div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  
                   <div>
                     <div>
                       <div>
@@ -153,7 +108,50 @@ function Linky({ nu }) {
                       </div>
                     </div>
                   </div>
-                  
+
+                  <div>
+                    <div>
+                      <div>
+                        <div>
+                          <div>
+                            <div>
+                              <div>
+                                <div>
+                                  <div>
+                                    <div>
+                                      <div>Lmao, nu aici linkul</div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div>
+                      <div>
+                        <div>
+                          <div>
+                            <div>
+                              <div>
+                                <div>
+                                  <div>
+                                    <div>
+                                      <div>Lmao, nu aici linkul</div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
                   <div>
                     <div>
                       <div>
@@ -186,7 +184,7 @@ function Linky({ nu }) {
                       </div>
                     </div>
                   </div>
-                  
+
                   <div>
                     <div>
                       <div>
@@ -316,10 +314,6 @@ function Linky({ nu }) {
                   <div>
                     <div>
                       <div>
-                        
-                  <div>
-                    <div>
-                      <div>
                         <div>
                           <div>
                             <div>
@@ -327,7 +321,13 @@ function Linky({ nu }) {
                                 <div>
                                   <div>
                                     <div>
-                                      <div>Lmao, nu aici linkul</div>
+                                      <div>
+                                        <div>
+                                          <div>
+                                            <div>Lmao, nu aici linkul</div>
+                                          </div>
+                                        </div>
+                                      </div>
                                     </div>
                                   </div>
                                 </div>
@@ -335,12 +335,6 @@ function Linky({ nu }) {
                             </div>
                           </div>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <div>
-                      <div>
                         <div>
                           <div>
                             <div>
@@ -348,7 +342,13 @@ function Linky({ nu }) {
                                 <div>
                                   <div>
                                     <div>
-                                      <div>Lmao, nu aici linkul</div>
+                                      <div>
+                                        <div>
+                                          <div>
+                                            <div>Lmao, nu aici linkul</div>
+                                          </div>
+                                        </div>
+                                      </div>
                                     </div>
                                   </div>
                                 </div>
@@ -356,12 +356,6 @@ function Linky({ nu }) {
                             </div>
                           </div>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <div>
-                      <div>
                         <div>
                           <div>
                             <div>
@@ -369,7 +363,13 @@ function Linky({ nu }) {
                                 <div>
                                   <div>
                                     <div>
-                                      <div>Lmao, nu aici linkul</div>
+                                      <div>
+                                        <div>
+                                          <div>
+                                            <div>Lmao, nu aici linkul</div>
+                                          </div>
+                                        </div>
+                                      </div>
                                     </div>
                                   </div>
                                 </div>
@@ -377,12 +377,6 @@ function Linky({ nu }) {
                             </div>
                           </div>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <div>
-                      <div>
                         <div>
                           <div>
                             <div>
@@ -390,7 +384,13 @@ function Linky({ nu }) {
                                 <div>
                                   <div>
                                     <div>
-                                      <div>Lmao, nu aici linkul</div>
+                                      <div>
+                                        <div>
+                                          <div>
+                                            <div>Lmao, nu aici linkul</div>
+                                          </div>
+                                        </div>
+                                      </div>
                                     </div>
                                   </div>
                                 </div>
@@ -398,12 +398,6 @@ function Linky({ nu }) {
                             </div>
                           </div>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <div>
-                      <div>
                         <div>
                           <div>
                             <div>
@@ -411,7 +405,13 @@ function Linky({ nu }) {
                                 <div>
                                   <div>
                                     <div>
-                                      <div>Lmao, nu aici linkul</div>
+                                      <div>
+                                        <div>
+                                          <div>
+                                            <div>Lmao, nu aici linkul</div>
+                                          </div>
+                                        </div>
+                                      </div>
                                     </div>
                                   </div>
                                 </div>
@@ -419,9 +419,6 @@ function Linky({ nu }) {
                             </div>
                           </div>
                         </div>
-                      </div>
-                    </div>
-                  </div>
                         <div>
                           <div>
                             <div>{nu}</div>
@@ -434,7 +431,7 @@ function Linky({ nu }) {
                     <div>
                       <div>
                         <div>
-                          <div>Lmao, nu aici linkul</div>
+                          <div>Ia un leu si dui de-ici</div>
                         </div>
                       </div>
                     </div>
