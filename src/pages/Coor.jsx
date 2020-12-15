@@ -24,6 +24,7 @@ function Coor() {
     }
   }
 
+
   const Bulgaria = () => {
     console.log('O parte cod cod este "23216378123681263876 * 0" ');
     test();
