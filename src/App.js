@@ -4,7 +4,6 @@ import Home from "./pages/Home";
 import GasesteLinkul from "./pages/GasesteLinkul";
 import FindTheWords from "./pages/FindTheWords";
 import Bin from "./pages/Bin";
-import LinkulGresit from "./pages/erori/erorare1";
 import Coor from "./pages/Coor";
 import Steaguri from "./pages/Steaguri";
 import "./Style.css";
@@ -17,7 +16,6 @@ function App() {
           <Route path="/" exact component={Home} />
           <Route path="/GasesteLinkul" exact component={GasesteLinkul} />
           <Route path="/Steaguri" exact component={Steaguri} />
-          <Route path="/erori/LinkulGresit" exact component={LinkulGresit} />
           <Route path="/Coor" exact component={Coor} />
           <Route path="/FindTheWords" exact component={FindTheWords} />
           <Route path="/Bin" exact component={Bin} />

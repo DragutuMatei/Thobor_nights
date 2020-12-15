@@ -1,5 +1,4 @@
 import React from "react";
-
 import ImageMapper from "react-image-mapper";
 import Back from "../components/Back";
 import Help from "../components/Help";
@@ -458,13 +457,14 @@ function GasesteLinkul() {
           "https://www.youtube.com/channel/UCoUzT42Ce6f_11ICDef3svA";
         break;
       default:
-        window.location.pathname = "/erori/LinkulGresit";
+        window.alert("Linkul gresit!");
+        break;
     }
   };
 
   return (
     <>
-      <Back/>
+      <Back />
       <ImageMapper
         src={src}
         map={AREAS_MAP}
