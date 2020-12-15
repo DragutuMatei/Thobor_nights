@@ -8,16 +8,16 @@ function Steaguri() {
   const [corect, setCorect] = useState(false);
 
   const src = {
-    p: require("../img/sapdajfpidagofgbj.png").default,
-    i: require("../img/lsaklkdbakgjfgblifkgjhdf.png").default,
-    s: require("../img/kjbdsfkjsdbfkjdsbkfjsdbf.png").default,
-    c: require("../img/lsadmsaldlsa.png").default,
-    a: require("../img/asoidhsaod.png").default,
-    l: require("../img/saldnslakdnsalkndlk.png").default,
-    e: require("../img/fhgfgfjdhfgsdjf.png").default,
-    r: require("../img/yusagdusaygd.png").default,
-    g: require("../img/ksjadbkasjdk.png").default,
-    n: require("../img/dkjfbsdkbfjkdsbfkj.png").default,
+    p: require("../img/adskjdkajsbasdasdasdsa.png").default,
+    i: require("../img/sadjiasdji.png").default,
+    s: require("../img/asljdbaskj.png").default,
+    c: require("../img/ndjkasnsakj.png").default,
+    a: require("../img/dkasjdbasjk.png").default,
+    l: require("../img/plplpl.png").default,
+    e: require("../img/askjdnsabasda.png").default,
+    r: require("../img/asdjkbsa.png").default,
+    g: require("../img/hanga.png").default,
+    n: require("../img/kajshdkasjh.png").default,
   };
 
   const submit = () => {
