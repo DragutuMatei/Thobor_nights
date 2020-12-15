@@ -18,7 +18,7 @@ function Bin() {
       .join("");
     if (txt === "console.log();") {
       setSh(true);
-      console.log("Codul este ziua de nastere a lui Bill Gates");
+      console.log('Codul este ziua de "nastere a lui Bill Gates"');
     } else if (txt === "ziuadenasterealuibillgates" && sh) {
       setCorect(true);
     } else {
