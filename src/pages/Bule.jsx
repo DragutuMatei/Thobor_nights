@@ -11,6 +11,10 @@ function Bule() {
       arrayCuBule.push({ x: i, y: j });
     }
   }
+  let clasa = "";
+  setTimeout(() => {
+    clasa += "clarNuCheie"
+  }, 5000);
 
   return (
     <>
@@ -83,8 +87,8 @@ function Bule() {
                                       );
                                       window.location.pathname = "/Vedere";
                                     }}
-                                    className="clarNuCheie"
                                     style={{
+                                      display:"none",
                                       left:
                                         arrayCuBule[
                                           Math.floor(

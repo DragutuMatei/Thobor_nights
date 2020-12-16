@@ -537,6 +537,7 @@ html {
 }
 
 .fullPage .cheie .clarNuCheie {
+  display: block !important;
   position: absolute;
   z-index: 4;
 }
