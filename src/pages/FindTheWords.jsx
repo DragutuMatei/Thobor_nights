@@ -38,7 +38,8 @@ function FindTheWords() {
           <Back />
           <div className="backk"></div>
           <div className="cerinta">
-            Cautati cuvintele din textul acesta si fa un proveb
+            Se pare că Robik are chef de jocuri de cuvinte astăzi, acum ne pune
+            să ghicim un proverb.
           </div>
           <div
             className="mesaje col"

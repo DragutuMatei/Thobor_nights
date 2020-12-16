@@ -37,7 +37,11 @@ function Bin() {
             padding: "0 100px",
           }}
         >
-          <div className="cerinta">Afla codul si scrie-l</div>
+          <div className="cerinta">
+            Acum ne jucam poker Binar, un joc distractiv deobicei, enervant când
+            ne decodăm propriile fișiere. Ajută-ne cu descifrarea codului binar
+            din spatele cărții.
+          </div>
           <div className="card">
             <div className="flip-card">
               <div className="flip-card-inner">
@@ -182,11 +186,13 @@ function Bin() {
           <Back />
         </div>
       )}
-      <Help text='Pe spatele cărții vei găsi mai multe coduri binare, acestea trebuie să le convertiți din cod binar în text normal, acestea sunt grupate în coloane, ex primele 2 litere : 
+      <Help
+        text='Pe spatele cărții vei găsi mai multe coduri binare, acestea trebuie să le convertiți din cod binar în text normal, acestea sunt grupate în coloane, ex primele 2 litere : 
 - 01100011 ( prima coloana, prima jumătate ) = "c"
 - 01101111 ( prima coloana, a 2-a jumătate ) = "o"
 Succes la căutarea textului.
-P.S. poți folosi un decryptor online.' />
+P.S. poți folosi un decryptor online.'
+      />
     </>
   );
 }

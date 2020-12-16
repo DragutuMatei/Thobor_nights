@@ -45,17 +45,8 @@ function Home() {
           ></i>
           <div className="text">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-              modi eius quos, laudantium, optio in ea ratione magnam illo,
-              inventore corporis! Laborum, consectetur molestias! Temporibus
-              minus sed architecto corrupti? Libero illum tenetur mollitia
-              asperiores, aliquid temporibus? Quidem quia laboriosam ipsam.
-              Consectetur voluptate culpa, itaque incidunt fuga consequuntur
-              distinctio nobis perferendis debitis corporis esse ad unde tempore
-              deserunt inventore pariatur temporibus alias aliquid animi!
-              Incidunt distinctio repudiandae totam tempore ipsam ratione
-              eligendi iste animi sit, sapiente exercitationem reprehenderit
-              deserunt molestiae velit accusamus! Itaque, even
+              Robik iar ne-a încurcat codurile și fișierele, ajuta-ne sa refacem
+              informațiile lipsa prin aceste puzzle-uri.
             </p>
           </div>
         </div>

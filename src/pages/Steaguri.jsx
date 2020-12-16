@@ -28,7 +28,7 @@ function Steaguri() {
       .split("")
       .filter((e) => e.trim().length)
       .join("");
-    if (ras === "pisicaaleargacainele") {
+    if (ras === "pisicaaleargacainele" || ras === "pisicaaleargăcâinele") {
       window.sessionStorage.setItem("steaguri", true);
       setCorect(true);
     } else {
@@ -52,7 +52,8 @@ function Steaguri() {
           >
             <Back />
             <div className="cerinta">
-              Decodati acest mesaj secret si scrieti rezultatul
+              De parcă ascunderea informațiilor nu erau de ajuns, acum ni le-a
+              și codificat în limbajul marinarilor. Decodați mesajul ascuns.
             </div>
             <div className="mesaj">
               <div className="p">

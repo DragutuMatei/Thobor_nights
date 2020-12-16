@@ -465,6 +465,10 @@ function GasesteLinkul() {
   return (
     <>
       <Back />
+      <h1 style={{ position: "absolute", zIndex: 10, color: "white", width:300, marginTop: 60, marginLeft:30}}>
+        Ne-a ascuns fișierele în spatele pozei, doar că nu ne-a spus unde,
+        ajuta-ne tu, verificând imaginea.
+      </h1>
       <ImageMapper
         src={src}
         map={AREAS_MAP}

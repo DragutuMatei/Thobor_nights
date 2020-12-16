@@ -10,6 +10,13 @@ function Coor() {
   const [show, setShow] = useState(false);
   const [show1, setShow1] = useState(false);
 
+  const txt = `Cum să cauți un cod ascuns? Simplu, astăzi veți învăța puțin "hacking".
+          Pentru a verifica un cod din spatele unui site trebuie să folosiți Inspect Element. Cum faceți asta? Simplu:
+          1. Faceți clic dreapta oriunde pe pagina web și, în partea de jos a meniului care apare, veți vedea „Inspectați”. Faceți clic pe asta.
+          2. Faceți clic pe meniul hamburger (pictograma cu 3 puncte stivuite) din extrema dreaptă a barei de instrumente Google Chrome, faceți clic pe Mai multe instrumente, apoi selectați Instrumente pentru dezvoltatori. Alternativ, în meniul fișier, faceți clic pe Vizualizare -> Dezvoltator -> Instrumente pentru dezvoltatori.
+          3. Preferați comenzile rapide de la tastatură? Apăsați CMD + Shift + I pe un Mac sau F12 pe un PC pentru a deschide Inspect Elements fără a face clic pe nimic.
+          Nu ți se potrivesc instrucțiunile? Caută pe google "How to Inspect element"`;
+
   function test() {
     const cod = parseInt(prompt("Codul este:", ""));
     if (cod === 69420615615615615660207) {
@@ -64,8 +71,9 @@ function Coor() {
           >
             <Back />
             <div className="cerinta">
-              Cautati codul ascuns in care veti afla urmatoarea instructiune
-              pentru a trece la nivelul urmator.
+              Observăm că Robik s-a distrat cu informațiile noastre, ne-a
+              codificat întreaga secțiune, si avem nevoie de ajutorul tau pentru
+              a afla ajunge la următorul nivel.
             </div>
             <div className="after_big">
               <div className="after_medium">
@@ -133,16 +141,7 @@ function Coor() {
           </div>
           {show && <Linky nu={link} />}
 
-          <Help
-            text='Cum să cauți un cod ascuns? Simplu, astăzi veți învăța puțin "hacking". 
-Pentru a verifica un cod din spatele unui site trebuie să folosiți Inspect Element. Cum faceți asta? Simplu:
-
-    1. Faceți clic dreapta oriunde pe pagina web și, în partea de jos a meniului care apare, veți vedea „Inspectați”. Faceți clic pe asta.
-    2. Faceți clic pe meniul hamburger (pictograma cu 3 puncte stivuite) din extrema dreaptă a barei de instrumente Google Chrome, faceți clic pe Mai multe instrumente, apoi selectați Instrumente pentru dezvoltatori. Alternativ, în meniul fișier, faceți clic pe Vizualizare -> Dezvoltator -> Instrumente pentru dezvoltatori.
-    3. Preferați comenzile rapide de la tastatură? Apăsați CMD + Shift + I pe un Mac sau F12 pe un PC pentru a deschide Inspect Elements fără a face clic pe nimic.
-
-Nu ți se potrivesc instrucțiunile? Caută pe google "How to Inspect element"'
-          />
+          <Help text={txt} />
         </>
       )}
     </>
