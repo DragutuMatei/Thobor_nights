@@ -80,12 +80,16 @@ export default class Dif extends Component {
                   ></div>
                   <Link
                     style={{
-                      position: 'absolute',
-                      left: 510,
-                      right: 590,
+                      position: "absolute",
+                      left: 520,
+                      top: 605,
+                      width: 20,
                       fontSize: 10,
-                      wordBreak: 'keep-all',
+                      wordBreak: "keep-all",
                       color: "white",
+                    }}
+                    onClick={() => {
+                      window.sessionStorage.setItem("Sort", "true");  
                     }}
                     to="/Bule"
                   >
