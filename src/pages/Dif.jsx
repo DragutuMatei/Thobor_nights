@@ -171,7 +171,6 @@ import React, { Component } from "react";
 import Back from "../components/Back";
 import Help from "../components/Help";
 
-
 export default class Dif extends Component {
   constructor(props) {
     super(props);
@@ -181,7 +180,10 @@ export default class Dif extends Component {
       diffY: 0,
       dragging: false,
       styles: {
-        left: window.innerWidth > 1300 ? window.innerWidth * 0.345 : window.innerWidth,
+        left:
+          window.innerWidth > 1300
+            ? window.innerWidth * 0.345
+            : window.innerWidth,
         top: 573,
       },
     };
@@ -252,7 +254,7 @@ export default class Dif extends Component {
                   <img src={require("../img/cu.jpg").default} alt="" />
                 </div>
               </div>
-              <Help text="nu este"/>
+              <Help text="nu este" />
             </div>
           </>
         )}
