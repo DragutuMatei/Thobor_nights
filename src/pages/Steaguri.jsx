@@ -42,7 +42,7 @@ function Steaguri() {
       {window.sessionStorage.getItem("findLink") && (
         <>
           <div
-            className="fullPage "
+            className="fullPage l"
             style={{
               display: "flex",
               justifyContent: "space-evenly",

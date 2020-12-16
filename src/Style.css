@@ -274,7 +274,7 @@ html {
 }
 
 .fullPage .cerinta {
-  width: 100vw;
+  width: auto;
   font-size: 50px;
   font-family: "Lato", sans-serif;
   color: white;
@@ -371,6 +371,107 @@ html {
   border-radius: 5px;
   cursor: pointer;
   font-size: 20px;
+}
+
+.fullPage .re {
+  width: 85vw;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.fullPage .re .filters {
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.fullPage .re .filters .a {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.fullPage .re .filters .a h3 {
+  margin: 5px 0;
+  text-align: center;
+  font-size: 30px;
+  color: #75c60b;
+}
+
+.fullPage .re .filters .a select {
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  background: #817f7f;
+  color: white;
+}
+
+.fullPage .re .filters .submit {
+  border-radius: 5px;
+  padding: 8px 20px;
+  background: #75c60b;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: #302838;
+  font-size: 20px;
+  width: auto;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+}
+
+.fullPage .re .links {
+  margin-left: 30px;
+  width: calc(85vw - 360px);
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.fullPage .re .links .nu {
+  padding: 10px 15px;
+  background: #888;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+}
+
+.fullPage .re .links .nu i {
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  color: #75c60b;
+}
+
+.fullPage .re .links .nu h3 {
+  font-size: 20px;
+  color: white;
 }
 
 .help {

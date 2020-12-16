@@ -165,11 +165,14 @@ function Bin() {
               }}
             >
               <Link
-                to="/next"
+                to="/Sort"
                 style={{
                   color: "white",
                   fontSize: 20,
                   fontFamily: "Lato",
+                }}
+                onClick={() => {
+                  window.sessionStorage.setItem("Bin", "true");
                 }}
               >
                 Urmatorul nivel

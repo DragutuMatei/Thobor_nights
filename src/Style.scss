@@ -218,7 +218,7 @@ html {
   }
 
   .cerinta {
-    width: 100vw;
+    width: auto;
     font-size: 50px;
     font-family: "Lato", sans-serif;
     color: white;
@@ -270,6 +270,7 @@ html {
       }
     }
   }
+
   .rasp {
     align-self: center;
     width: 700px;
@@ -297,6 +298,85 @@ html {
       border-radius: 5px;
       cursor: pointer;
       font-size: 20px;
+    }
+  }
+
+  .re {
+    width: 85vw;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    .filters {
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+
+      .a {
+        width: 100%;
+        margin: 10px 0;
+
+        h3 {
+          margin: 5px 0;
+          text-align: center;
+          font-size: 30px;
+          color: #75c60b;
+        }
+        select {
+          width: 100%;
+          padding: 10px;
+          font-size: 20px;
+          background: rgb(129, 127, 127);
+          color: white;
+        }
+      }
+      .submit {
+        border-radius: 5px;
+        padding: 8px 20px;
+        background: #75c60b;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        color: #302838;
+        font-size: 20px;
+        width: auto;
+        transition: transform 0.2s ease-in-out;
+      }
+    }
+
+    .links {
+      margin-left: 30px;
+      width: calc(85vw - 360px);
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: flex-start;
+
+      .nu {
+        padding: 10px 15px;
+        // width: 160px;
+        background: #888;
+        cursor: pointer;
+        position: relative;
+        text-align: center;
+
+
+        i {
+          width: 100%;
+          text-align: center;
+          font-size: 50px;
+          color: #75c60b;
+        }
+
+        h3 {
+          font-size: 20px;
+          color: white;
+        }
+      }
     }
   }
 }
