@@ -472,7 +472,7 @@ function GasesteLinkul() {
         strokeColor="rgba(0, 0, 0, 0.0)"
         onClick={onMapClick}
       />
-      <Help text="lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem " />
+      <Help text="Mișcă mouse-ul de-a lungul imaginii pentru găsirea link-ului corect pentru următorul nivel." />
     </>
   );
 }

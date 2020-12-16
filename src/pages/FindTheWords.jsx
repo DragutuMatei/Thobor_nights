@@ -100,9 +100,12 @@ function FindTheWords() {
           </div>
 
           {corect ? (
-            <h1 style={{ zIndex: 3 }} onClick={() => {
-              window.sessionStorage.setItem("findTheWords", "true");
-            }}>
+            <h1
+              style={{ zIndex: 3 }}
+              onClick={() => {
+                window.sessionStorage.setItem("findTheWords", "true");
+              }}
+            >
               <Link
                 to="/Bin"
                 style={{ color: "white", fontSize: 20, fontFamily: "Lato" }}
@@ -113,7 +116,11 @@ function FindTheWords() {
           ) : null}
         </div>
       )}
-      <Help text="lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem " />
+      <Help
+        text='În acest text de "Lorem ipsum" , vei găsi cuvinte scrise dupa "acest model". 
+Spor la căutat proverbul. 
+*Atenție, aceste cuvinte nu vor fi în ordine.'
+      />
     </>
   );
 }

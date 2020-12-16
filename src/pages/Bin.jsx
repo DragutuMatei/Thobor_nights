@@ -182,7 +182,11 @@ function Bin() {
           <Back />
         </div>
       )}
-      <Help text="https://www.convertbinary.com/text-to-binary/ " />
+      <Help text='Pe spatele cărții vei găsi mai multe coduri binare, acestea trebuie să le convertiți din cod binar în text normal, acestea sunt grupate în coloane, ex primele 2 litere : 
+- 01100011 ( prima coloana, prima jumătate ) = "c"
+- 01101111 ( prima coloana, a 2-a jumătate ) = "o"
+Succes la căutarea textului.
+P.S. poți folosi un decryptor online.' />
     </>
   );
 }

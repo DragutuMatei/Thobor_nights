@@ -107,7 +107,7 @@ function Steaguri() {
               ) : null}
             </div>
           </div>
-          <Help text="lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem " />
+          <Help text='Acest nivel folosește limbajul marinarilor de acum aproximativ 200 de ani.  Ai nevoie de ajutor? Îți recomandăm să cauți pe google image "steaguri litere" pentru descifrarea codului.' />
         </>
       )}
     </>

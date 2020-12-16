@@ -32,6 +32,7 @@ html {
   background-color: #302838;
   overflow-x: hidden;
 }
+
 .backk {
   background: url(./img/background.jpg);
   top: 0;
@@ -138,7 +139,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     .flip-card {
       background-color: transparent;
       width: 460px;
@@ -224,6 +225,7 @@ html {
     font-size: 50px;
     font-family: "Lato", sans-serif;
     color: white;
+    position: relative;
   }
 
   .after_big {
@@ -379,6 +381,49 @@ html {
       }
     }
   }
+
+  .images {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+
+    .left,
+    .right {
+      width: 500px;
+      resize: none;
+      // position: relative;
+  position: relative;
+
+      img {
+        width: 100%;
+        resize: none;
+        height: auto;
+        z-index: 4;
+        user-select: none;
+      }
+
+      .im {
+        position: absolute;
+        width: 65px;
+        height: 65px;
+        background: url(./img/numai.png);
+        z-index: 5;
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .fullPage .images {
+    flex-direction: column;
+    .right {
+      margin: 20px;
+    }
+  }
 }
 
 .help {
@@ -432,4 +477,45 @@ html {
   left: 0;
   margin: 20px;
   z-index: 10;
+}
+
+.Dialog {
+  width: 50px;
+  height: 50px;
+  background-color: lightblue;
+  border-radius: 10px;
+  border: 3px solid grey;
+  position: absolute;
+  cursor: move;
+  z-index: 10;
+  top: 150px;
+  left: 520px;
+}
+
+.hidden {
+  display: none;
+}
+
+.DialogTitle {
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid grey;
+}
+
+.Contents {
+  padding-top: 50px;
+  padding-bottom: 200px;
+}
+
+.closeButton {
+  font-size: 12px;
+  width: 100px;
+  color: black;
+  border: 2px solid black;
+  border-radius: 25px;
+  padding: 10px;
+  margin: 10px;
+  margin-left: 140px;
+  cursor: pointer;
 }

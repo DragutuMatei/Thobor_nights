@@ -20,7 +20,7 @@ function App() {
           <Route path="/Steaguri" exact component={Steaguri} />
           <Route path="/Coor" exact component={Coor} />
           <Route path="/FindTheWords" exact component={FindTheWords} />
-          <Route path="/Dif " exact component={Dif} />
+          <Route path="/Dif" exact component={Dif} />
           <Route path="/Bin" exact component={Bin} />
           <Route path="/Sort" exact component={Sort} />
         </Switch>
