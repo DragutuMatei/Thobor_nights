@@ -405,11 +405,36 @@ html {
         position: absolute;
         width: 65px;
         height: 65px;
-        background: url(./img/numai.png);
         z-index: 5;
+        object-fit: contain;
         background-size: contain;
         background-position: center center;
         background-repeat: no-repeat;
+      }
+    }
+  }
+
+  .cheie {
+    width: calc(100vw - 150px);
+    min-height: 750px;
+    border: #75c60b 5px solid;
+    border-radius: 20px;
+
+    img {
+      width: 150px;
+      height: 150px;
+      user-select: none;
+      position: absolute;
+      z-index: 5;
+    }
+
+    .clarNuCheie {
+      position: absolute;
+      z-index: 4;
+
+      img {
+        width: 90px;
+        height: auto;
       }
     }
   }

@@ -510,11 +510,40 @@ html {
   position: absolute;
   width: 65px;
   height: 65px;
-  background: url(./img/numai.png);
   z-index: 5;
+  -o-object-fit: contain;
+     object-fit: contain;
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
+}
+
+.fullPage .cheie {
+  width: calc(100vw - 150px);
+  min-height: 750px;
+  border: #75c60b 5px solid;
+  border-radius: 20px;
+}
+
+.fullPage .cheie img {
+  width: 150px;
+  height: 150px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  position: absolute;
+  z-index: 5;
+}
+
+.fullPage .cheie .clarNuCheie {
+  position: absolute;
+  z-index: 4;
+}
+
+.fullPage .cheie .clarNuCheie img {
+  width: 90px;
+  height: auto;
 }
 
 @media screen and (max-width: 1300px) {
