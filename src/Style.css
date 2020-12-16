@@ -69,7 +69,6 @@ html {
 .fullPage {
   width: 100vw;
   min-height: 100vh;
-  position: relative;
 }
 
 .fullPage .thoborBackground {
@@ -494,7 +493,6 @@ html {
 .fullPage .images .right {
   width: 500px;
   resize: none;
-  position: relative;
 }
 
 .fullPage .images .left img,

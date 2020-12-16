@@ -64,7 +64,6 @@ html {
 .fullPage {
   width: 100vw;
   min-height: 100vh;
-  position: relative;
 
   .thoborBackground {
     background-image: url(./img/background.jpg);
@@ -392,8 +391,6 @@ html {
     .right {
       width: 500px;
       resize: none;
-      // position: relative;
-  position: relative;
 
       img {
         width: 100%;
