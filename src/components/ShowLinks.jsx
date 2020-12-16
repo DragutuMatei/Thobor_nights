@@ -4,6 +4,7 @@ function ShowLinks({ data }) {
 
     const test = (d) => {
         if (d.link === "/Dif") {
+            window.sessionStorage.setItem("ShowLinks", "true");
             window.location.pathname = d.link;
         }
         else {

@@ -45,14 +45,13 @@ const marime = [];
 
 const date = [];
 
-for (let i = 0; i < 100; i++){
+for (let i = 0; i < 100; i++) {
   marime.push(i);
 }
 
-for (let i = 0; i < 200; i++){
+for (let i = 0; i < 200; i++) {
   date.push(i);
 }
-
 
 const data = [
   {
@@ -545,6 +544,6 @@ const data = [
   },
 ];
 
-const array = [data, name, arr, marime, date]
+const array = [data, name, arr, marime, date];
 
 export default array;
