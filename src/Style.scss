@@ -429,9 +429,10 @@ html {
     }
 
     .clarNuCheie {
-      display: block !important;
       position: absolute;
       z-index: 4;
+      width: 90px;
+      height: auto;
 
       img {
         width: 90px;

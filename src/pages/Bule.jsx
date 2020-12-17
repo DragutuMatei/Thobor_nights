@@ -5,15 +5,17 @@ import Bula from "../components/Bula";
 import Help from "../components/Help";
 
 function Bule() {
+  const [display, setdisplay] = useState("none");
   let arrayCuBule = [];
   for (let i = 100; i < window.innerWidth - 170; i += 60) {
     for (let j = 155; j < window.innerHeight - 170; j += 60) {
       arrayCuBule.push({ x: i, y: j });
     }
   }
-  let clasa = "";
+
   setTimeout(() => {
-    clasa += "clarNuCheie"
+    setdisplay("block");
+    console.log("ASd");
   }, 5000);
 
   return (
@@ -87,8 +89,9 @@ function Bule() {
                                       );
                                       window.location.pathname = "/Vedere";
                                     }}
+                                    className="clarNuCheie"
                                     style={{
-                                      display:"none",
+                                      display: display,
                                       left:
                                         arrayCuBule[
                                           Math.floor(
