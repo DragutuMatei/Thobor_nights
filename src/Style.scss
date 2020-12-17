@@ -205,9 +205,10 @@ html {
       align-self: flex-end;
       margin: 20px;
     }
+
     .text {
       width: calc(100% - 40px);
-      min-height: 200px;
+      min-height: 100%;
       margin: 0 20px 20px 20px;
       overflow: hidden;
 
@@ -248,7 +249,7 @@ html {
     }
 
     .after_medium .after_small::after {
-      content: "Scrie in oridine: Bulgaria(); Romania(); Germania(); Anglia(); Rusia();";
+      content: "Scrie pe rand urmatoarele functii in caseta: Bulgaria(); Romania(); Germania(); Anglia(); Rusia();";
       opacity: 0;
       color: rgba(255, 255, 255, 0);
     }
@@ -440,6 +441,49 @@ html {
       }
     }
   }
+
+  .codul {
+    width: 85vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .imagi {
+    width: 870px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    position: relative;
+    margin: 20px 0;
+
+    .small {
+      margin: auto;
+      width: 850px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+
+      img {
+        width: 150px;
+        cursor: pointer;
+        height: auto;
+      }
+    }
+    .big {
+      margin: 50px 0;
+      img {
+        width: 870px;
+        object-fit: contain;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1300px) {
@@ -493,6 +537,7 @@ html {
 .col {
   color: rgb(197, 197, 197);
 }
+
 .back {
   font-size: 20px;
   color: white;
