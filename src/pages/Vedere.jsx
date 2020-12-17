@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 
 function Vedere() {
   const [code, setCode] = useState("");
-  const [corect, setCorect] = useState(false);
 
   const submit = () => {
     const ras = code
@@ -17,11 +16,11 @@ function Vedere() {
       .join("");
 
     if (ras === "pi=3.1415") {
+      alert("Raspunsul este corect!");
       window.sessionStorage.setItem("Vedere", true);
-      setCorect(true);
+      window.location.pathname = "/Bilet";
     } else {
       alert("Raspunsul e gresit");
-      setCorect(false);
     }
   };
 
@@ -39,10 +38,12 @@ function Vedere() {
             }}
           >
             <Back />
-            <div className="cerinta" style={{ margin: 50 }}>
-              Gaseste codul:
+            <div className="cerinta" style={{ margin: "50px 50px 20px 50px" }}>
+              În sfârșit suntem aproape să ne obținem fișierele în sfârșit.
+              Decodifica textul din aceste buline pentru a deschide seiful ce
+              contine informatiile noastre.
             </div>
-            <div className="codul" style={{ margin: "20px 0 50px 0" }}>
+            <div className="codul" style={{ margin: "20px 0 10px 0" }}>
               <svg
                 width="300"
                 height="300"
@@ -181,19 +182,6 @@ function Vedere() {
               <button type="submit" onClick={submit}>
                 Submit
               </button>
-            </div>
-
-            <div className="rez">
-              {corect ? (
-                <h1>
-                  <Link
-                    to="/Bilet"
-                    style={{ color: "white", fontSize: 20, fontFamily: "Lato" }}
-                  >
-                    Urmatorul nivel
-                  </Link>
-                </h1>
-              ) : null}
             </div>
           </div>
           <Help text="Găsește codul ascuns în bilele vizuale, acestea nu sunt în ordine deci tu va trebui să le găsești ordinea." />

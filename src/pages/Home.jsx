@@ -13,13 +13,13 @@ function Home() {
   function big() {
     style = {
       width: "800px",
-      height: "350px",
+      height: "300px",
     };
   }
 
   return (
     <>
-      <div className="fullPage ">
+      <div className="fullPage" style={{paddingBottom:0}}>
         <div className="thoborBackground">
           <div className="banner">
             <h1>
@@ -38,7 +38,7 @@ function Home() {
 
         {instructiune && big()}
 
-        <div className="info" style={style}>
+        <div className="info1" style={style}>
           <i
             className="far fa-times-circle"
             onClick={() => setInstructiune(false)}

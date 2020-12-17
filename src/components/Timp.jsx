@@ -1,23 +1,38 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 
-function Timp(props) {
+// function Timp(props) {
+//   const sec =
+//     (props.DigitFour % 10).toString() +
+//     (props.DigitThere % 10).toString() +
+//     (props.DigitTwo % 10).toString() +
+//     (props.DigitOne % 10).toString();
 
-    // const [nr, setNr] = useState();
+//   const nr = sec.split("");
 
-    // if(window.sessionStorage())
+//   // console.log(nr);
 
-  return (
-    <>
-      <h2>
-         Timp trecut: {props.DigitFour % 10}
-        {props.DigitThere % 10}
-        {props.DigitTwo % 10}
-        {props.DigitOne % 10}
-      </h2>
-    </>
-  );
-}
+//   let n = "";
 
-let counter = 0;
+//   for (let i = 0; i < nr.length; i++) {
+//     if (nr[i] !== 0) {
+//       n += nr[i].toString();
+//     }
+//   }
 
-export default Timp;
+//   // console.log(parseInt(n));
+
+//   window.sessionStorage.setItem(props.path, parseInt(n));
+
+//   return (
+//     <>
+//       <h2>
+//         Timp trecut: {props.DigitFour % 10}
+//         {props.DigitThere % 10}
+//         {props.DigitTwo % 10}
+//         {props.DigitOne % 10}
+//       </h2>
+//     </>
+//   );
+// }
+
+// export default Timp;

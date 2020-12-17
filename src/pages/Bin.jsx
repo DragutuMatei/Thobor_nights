@@ -20,7 +20,9 @@ function Bin() {
       setSh(true);
       console.log('Codul este "ziua de nastere a lui Bill Gates"');
     } else if (txt === "ziuadenasterealuibillgates" && sh) {
-      setCorect(true);
+      alert("Raspunsul este corect!");
+      window.sessionStorage.setItem("Bin", "true");
+      window.location.pathname = "/Sort";
     } else {
       alert("Rasp tau nu e corect");
     }
@@ -37,7 +39,7 @@ function Bin() {
             padding: "0 100px",
           }}
         >
-          <div className="cerinta" style={{margin:"20px 0"}}>
+          <div className="cerinta" style={{ margin: "20px 0" }}>
             Acum ne jucam poker Binar, un joc distractiv deobicei, enervant când
             ne decodăm propriile fișiere. Ajută-ne cu descifrarea codului binar
             din spatele cărții.
@@ -162,27 +164,6 @@ function Bin() {
               Submit
             </button>
           </div>
-          {corect && (
-            <h1
-              style={{
-                zIndex: 4,
-              }}
-            >
-              <Link
-                to="/Sort"
-                style={{
-                  color: "white",
-                  fontSize: 20,
-                  fontFamily: "Lato",
-                }}
-                onClick={() => {
-                  window.sessionStorage.setItem("Bin", "true");
-                }}
-              >
-                Urmatorul nivel
-              </Link>
-            </h1>
-          )}
           <Back />
         </div>
       )}

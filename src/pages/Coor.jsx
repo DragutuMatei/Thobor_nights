@@ -10,45 +10,53 @@ function Coor() {
   const [show, setShow] = useState(false);
   const [show1, setShow1] = useState(false);
 
-  const txt = `Cum să cauți un cod ascuns? Simplu, astăzi veți învăța puțin "hacking".
-          Pentru a verifica un cod din spatele unui site trebuie să folosiți Inspect Element. Cum faceți asta? Simplu:
-          1. Faceți clic dreapta oriunde pe pagina web și, în partea de jos a meniului care apare, veți vedea „Inspectați”. Faceți clic pe asta.
-          2. Faceți clic pe meniul hamburger (pictograma cu 3 puncte stivuite) din extrema dreaptă a barei de instrumente Google Chrome, faceți clic pe Mai multe instrumente, apoi selectați Instrumente pentru dezvoltatori. Alternativ, în meniul fișier, faceți clic pe Vizualizare -> Dezvoltator -> Instrumente pentru dezvoltatori.
-          3. Preferați comenzile rapide de la tastatură? Apăsați CMD + Shift + I pe un Mac sau F12 pe un PC pentru a deschide Inspect Elements fără a face clic pe nimic.
-          Nu ți se potrivesc instrucțiunile? Caută pe google "How to Inspect element"`;
+  const txt = `Cum să cauți un cod ascuns? Simplu, astăzi veți învăța puțin "hacking". 
+  Pentru a verifica un cod din spatele unui site trebuie să folosiți Inspect Element.
+  
+  Pentru a intra in inspect element : (Fn) F12 sau CTRL+SHIFT+I , sau click dreapta - Inspect Element.
+  
+  Nu ți se potrivesc instrucțiunile? Caută pe google "How to Inspect element".
+  
+  Trebuie sa aveti taburile de consola, styling si codul paginii.
+  
+  O data ce ai reușit să intri cu inspect element caută în cod "::after" , acolo ți se va activa secțiune styles ce conține instrucțiunile pentru acest nivel.
+  
+  Tot ai nevoie de ajutor? Scrie în ce ordine vrei tu acele functii (Ex. functie: "Functie();" ) , apesi pe submit, în acea fereastra de pop up ce te intreaba care este codul, va trebui sa puneți în ordine alfabetica a țărilor, codurile ce le veți găsi în tabul de Inspect Element - TAB -ul "Console" . Fiecare funcție reprezintă o formula, rezolvarea acelei formule va fi partea dvs. de cod de utilizat. Acel cod trebuie utilizat fără spații. Ex: dacă codul găsit de voi este 13 15 8 , trebuie scris 13158. 
+  După ce ai introdus codul corect, apasă pe ok, si caută în tabul de inspect element " <div style="display: none; opacity: 0;"> " în acel element trebuie să găsești link-ul.`;
 
   function test() {
     const cod = parseInt(prompt("Codul este:", ""));
-    if (cod === 69420615615615615660207) {
+    if (cod === 61561561561560669420207) {
       setLink(window.location.pathname.replace("Coor", "FindTheWords"));
       setShow(true);
       alert(
-        "Codul este corect! Pentru a continua cauta in codul din consola linkul. Daca il gasesti scrie-l in inputul ala"
+        "Codul este corect! Pentru a continua, cauta in codul din consola linkul. Daca il gasesti scrie-l in caseta."
       );
     } else {
       setShow(false);
-      alert("Codul nu e corect mai incearca!");
+      alert("Codul nu e corect, mai incearca!");
     }
   }
 
   const Bulgaria = () => {
     console.log('O parte cod cod este "23216378123681263876 * 0" ');
-    test();
+  };
+
+  const Botosani = () => {
+    window.sessionStorage.setItem("Coor", true);
+    window.location.pathname = "/FindTheWords";
   };
 
   const Romania = () => {
     console.log('O parte cod cod este "69420" ');
-    test();
   };
 
   const Germania = () => {
     console.log('O parte cod cod este "2 + 2 * 2" ');
-    test();
   };
 
   const Anglia = () => {
     console.log('O parte cod cod este "12312312312312 / 2" ');
-    test();
   };
 
   const Rusia = () => {
@@ -91,7 +99,14 @@ function Coor() {
               />
               <button
                 onClick={() => {
-                  switch (text) {
+                  switch (
+                    text
+                      .trim()
+                      .toString()
+                      .split("")
+                      .filter((e) => e.trim().length)
+                      .join("")
+                  ) {
                     case "Bulgaria();":
                       Bulgaria();
                       break;
@@ -101,6 +116,9 @@ function Coor() {
                     case "Germania();":
                       Germania();
                       break;
+                    case "Botosani();":
+                      Botosani();
+                      break;
                     case "Anglia();":
                       Anglia();
                       break;
@@ -109,7 +127,8 @@ function Coor() {
                       break;
                     case "/FindTheWords":
                       window.sessionStorage.setItem("Coor", true);
-                      setShow1(true);
+                      alert("Ai raspuns corect!");
+                      window.location.pathname = "/FindTheWords";
                       break;
                     default:
                       alert("Nu e corect ceea ce ai introdus");
@@ -120,7 +139,7 @@ function Coor() {
                 Submit
               </button>
             </div>
-            {show1 ? (
+            {/* {show1 ? (
               <h1
                 style={{
                   zIndex: 4,
@@ -137,7 +156,7 @@ function Coor() {
                   Urmatorul nivel
                 </Link>
               </h1>
-            ) : null}
+            ) : null} */}
           </div>
           {show && <Linky nu={link} />}
 

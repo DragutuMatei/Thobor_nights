@@ -8,14 +8,15 @@ function Bilet() {
   const [cod, setCode] = useState(makeid(5));
 
   function makeid(length) {
-    var result           = '';
-    var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    var result = "";
+    var characters =
+      "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
     var charactersLength = characters.length;
-    for ( var i = 0; i < length; i++ ) {
-       result += characters.charAt(Math.floor(Math.random() * charactersLength));
+    for (var i = 0; i < length; i++) {
+      result += characters.charAt(Math.floor(Math.random() * charactersLength));
     }
     return result;
- }
+  }
 
   const submit = () => {
     const ras = text
@@ -50,8 +51,9 @@ function Bilet() {
           >
             <Back />
             <div className="cerinta" style={{ margin: 50 }}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-              recusandae amet nihil at alias?
+              Se pare că stick-ul are parola, părea prea ușor, nu? Ajută-ne să
+              decodificăm parola, ne-a lăsat 4 bilete cu instrucțiuni, te poți
+              folosi de ele.
             </div>
             <div className="imagi">
               <div className="small">
@@ -106,7 +108,7 @@ function Bilet() {
               <button onClick={submit}>Submit</button>
             </div>
           </div>
-          <Help text='Acest nivel folosește limbajul marinarilor de acum aproximativ 200 de ani.  Ai nevoie de ajutor? Îți recomandăm să cauți pe google image "steaguri litere" pentru descifrarea codului.' />
+          <Help text="Citește mesajul din cele 4 bilete, pune-l in caseta text, trimte, apoi verifica consola și introdu codul de acolo. " />
         </>
       )}
     </>

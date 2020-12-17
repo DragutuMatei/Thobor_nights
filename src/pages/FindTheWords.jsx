@@ -15,11 +15,17 @@ function FindTheWords() {
       .split("")
       .filter((e) => e.trim().length)
       .join("");
-    if (txt === "i-aajunscutitullaos") {
-      setCorect(true);
+    if (
+      txt === "i-aajunscutitullaos" ||
+      txt === "i-aajunslaoscutitul" ||
+      txt === "i-aajunscuțitullaos" ||
+      txt === "i-aajunslaoscuțitul"
+    ) {
+      alert("Raspunsul este corect!");
+      window.sessionStorage.setItem("findTheWords", true);
+      window.location.pathname = "/Bin";
     } else {
       alert("Raspunsul e gresit");
-      setCorect(false);
     }
   };
 
@@ -99,22 +105,6 @@ function FindTheWords() {
               Submit
             </button>
           </div>
-
-          {corect ? (
-            <h1
-              style={{ zIndex: 3 }}
-              onClick={() => {
-                window.sessionStorage.setItem("findTheWords", "true");
-              }}
-            >
-              <Link
-                to="/Bin"
-                style={{ color: "white", fontSize: 20, fontFamily: "Lato" }}
-              >
-                Urmatorul nivel
-              </Link>
-            </h1>
-          ) : null}
         </div>
       )}
       <Help

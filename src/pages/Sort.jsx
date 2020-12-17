@@ -40,6 +40,7 @@ function Sort() {
           }}
         >
           <Back />
+
           <div className="cerinta" style={{ margin: "20px" }}>
             Acum Robik ne-a ascuns informațiile în unul dintre aceste foldere.
             Ai posibilitatea de a le sorta pe anumite categorii pentru a le

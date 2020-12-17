@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Back from "../components/Back";
-import Counter from "../components/Counter";
 import Help from "../components/Help";
 
 function Steaguri() {
@@ -31,10 +30,10 @@ function Steaguri() {
       .join("");
     if (ras === "pisicaaleargacainele" || ras === "pisicaaleargăcâinele") {
       window.sessionStorage.setItem("steaguri", true);
-      setCorect(true);
+      alert("Ai raspuns corect");
+      window.location.pathname = "/Coor";
     } else {
       alert("Raspunsul e gresit");
-      setCorect(false);
     }
   };
 
@@ -51,7 +50,6 @@ function Steaguri() {
               padding: "0 100px",
             }}
           >
-            <Counter/>
             <Back />
             <div className="cerinta">
               De parcă ascunderea informațiilor nu erau de ajuns, acum ni le-a
@@ -97,7 +95,7 @@ function Steaguri() {
                 Submit
               </button>
             </div>
-            <div className="rez">
+            {/* <div className="rez">
               {corect ? (
                 <h1>
                   <Link
@@ -108,7 +106,7 @@ function Steaguri() {
                   </Link>
                 </h1>
               ) : null}
-            </div>
+            </div> */}
           </div>
           <Help text='Acest nivel folosește limbajul marinarilor de acum aproximativ 200 de ani.  Ai nevoie de ajutor? Îți recomandăm să cauți pe google image "steaguri litere" pentru descifrarea codului.' />
         </>

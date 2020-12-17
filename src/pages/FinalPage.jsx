@@ -6,6 +6,7 @@ import emailjs from "emailjs-com";
 function FinalPage() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [discord, setDiscord] = useState("");
   const [experienta, setExperienta] = useState("");
 
   init("user_F1FXOrwoiGSWERQpZLjlR");
@@ -16,15 +17,16 @@ function FinalPage() {
     const templateParams = {
       name: name,
       email: email,
-      experinta: experienta,
-    }; 
+      discord: discord,
+      experienta: experienta,
+    };
 
     emailjs.send(serviceID, templateID, templateParams).then(
-      function (response) {
-        console.log("SUCCESS!", response.status, response.text);
+      () => {
+        alert("Trimis!");
       },
-      function (error) {
-        console.log("FAILED...", error);
+      (err) => {
+        alert(JSON.stringify(err));
       }
     );
   };
@@ -43,8 +45,20 @@ function FinalPage() {
             }}
           >
             <Back />
-            <div className="titlu">
-              <h1>Va multumim pentru participare</h1>
+            <div
+              className="titlu"
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <h1>Vă mulțumim pentru participare</h1>
+              <h4 style={{ width: 800, textAlign: "center", color: "white" }}>
+                Gata, ne-am recuperat fișierele, multumim de ajutor, te rugăm să
+                completezi formularul de mai jos.
+              </h4>
             </div>
             <form className="form">
               <div className="left">
@@ -69,6 +83,16 @@ function FinalPage() {
                   />
                 </div>
                 <div className="row">
+                  <input
+                    required
+                    type="text"
+                    placeholder="Discord nickname"
+                    onChange={(e) => {
+                      setDiscord(e.target.value);
+                    }}
+                  />
+                </div>
+                <div className="row">
                   <button onClick={submit}>Submit</button>
                 </div>
               </div>
@@ -78,10 +102,15 @@ function FinalPage() {
                   onChange={(e) => {
                     setExperienta(e.target.value);
                   }}
-                  placeholder="Cum ti s-a parut aceasta experienta?"
+                  placeholder="Cum ți s-a parut aceasta experiență?"
                 ></textarea>
               </div>
             </form>
+            <img
+              className="imagineBack"
+              src={require("../img/backfinal.png").default}
+              alt=""
+            />
           </div>
         </>
       )}
