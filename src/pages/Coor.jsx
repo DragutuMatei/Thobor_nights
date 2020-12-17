@@ -102,30 +102,31 @@ function Coor() {
                   switch (
                     text
                       .trim()
-                      .toString()
+                    .toString()
+                    .toLowerCase()
                       .split("")
                       .filter((e) => e.trim().length)
                       .join("")
                   ) {
-                    case "Bulgaria();":
+                    case "bulgaria();":
                       Bulgaria();
                       break;
-                    case "Romania();":
+                    case "romania();":
                       Romania();
                       break;
-                    case "Germania();":
+                    case "germania();":
                       Germania();
                       break;
-                    case "Botosani();":
+                    case "botosani();":
                       Botosani();
                       break;
-                    case "Anglia();":
+                    case "anglia();":
                       Anglia();
                       break;
-                    case "Rusia();":
+                    case "rusia();":
                       Rusia();
                       break;
-                    case "/FindTheWords":
+                    case "/findthewords":
                       window.sessionStorage.setItem("Coor", true);
                       alert("Ai raspuns corect!");
                       window.location.pathname = "/FindTheWords";
