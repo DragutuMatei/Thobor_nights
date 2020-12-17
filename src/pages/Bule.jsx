@@ -15,7 +15,6 @@ function Bule() {
 
   setTimeout(() => {
     setdisplay("block");
-    console.log("ASd");
   }, 5000);
 
   return (
@@ -37,7 +36,13 @@ function Bule() {
             </div>
             <div className="cheie">
               {arrayCuBule.map((bula) => (
-                <Bula key={bula.x / bula.y} X={bula.x} Y={bula.y} />
+                <Bula
+                  key={
+                    bula.x / bula.y === 0.8 ? Math.random() : bula.x / bula.y
+                  }
+                  X={bula.x}
+                  Y={bula.y}
+                />
               ))}
               <div>
                 <div>
@@ -82,22 +87,16 @@ function Bule() {
                               <div>
                                 <div>
                                   <div
-                                    onClick={() => {
-                                      window.sessionStorage.setItem(
-                                        "Bule",
-                                        "true"
-                                      );
-                                      window.location.pathname = "/Vedere";
-                                    }}
                                     className="clarNuCheie"
                                     style={{
                                       display: display,
+                                      height: 150,
                                       left:
                                         arrayCuBule[
                                           Math.floor(
                                             Math.random() * arrayCuBule.length
                                           )
-                                        ].x < 200
+                                        ].x <= 200
                                           ? arrayCuBule[
                                               Math.floor(
                                                 Math.random() *
@@ -109,13 +108,25 @@ function Bule() {
                                                 Math.random() *
                                                   arrayCuBule.length
                                               )
+                                            ].x >= 1320
+                                          ? arrayCuBule[
+                                              Math.floor(
+                                                Math.random() *
+                                                  arrayCuBule.length
+                                              )
+                                            ].x - 200
+                                          : arrayCuBule[
+                                              Math.floor(
+                                                Math.random() *
+                                                  arrayCuBule.length
+                                              )
                                             ].x,
                                       top:
                                         arrayCuBule[
                                           Math.floor(
                                             Math.random() * arrayCuBule.length
                                           )
-                                        ].y < 200
+                                        ].y <= 200
                                           ? arrayCuBule[
                                               Math.floor(
                                                 Math.random() *
@@ -127,11 +138,39 @@ function Bule() {
                                                 Math.random() *
                                                   arrayCuBule.length
                                               )
+                                            ].y >= 700
+                                          ? arrayCuBule[
+                                              Math.floor(
+                                                Math.random() *
+                                                  arrayCuBule.length
+                                              )
+                                            ].y - 150
+                                          : arrayCuBule[
+                                              Math.floor(
+                                                Math.random() *
+                                                  arrayCuBule.length
+                                              )
                                             ].y,
+                                    }}
+                                    onMouseEnter={() => {
+                                      console.log(
+                                        document.querySelector(".clarNuCheie")
+                                          .style.left +
+                                          "          " +
+                                          document.querySelector(".clarNuCheie")
+                                            .style.top
+                                      );
                                     }}
                                   >
                                     <img
                                       src={require("../img/key.png").default}
+                                      onClick={() => {
+                                        window.sessionStorage.setItem(
+                                          "Bule",
+                                          "true"
+                                        );
+                                        window.location.pathname = "/Vedere";
+                                      }}
                                     />
                                   </div>
                                 </div>
