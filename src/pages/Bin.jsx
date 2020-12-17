@@ -37,7 +37,7 @@ function Bin() {
             padding: "0 100px",
           }}
         >
-          <div className="cerinta">
+          <div className="cerinta" style={{margin:"20px 0"}}>
             Acum ne jucam poker Binar, un joc distractiv deobicei, enervant când
             ne decodăm propriile fișiere. Ajută-ne cu descifrarea codului binar
             din spatele cărții.
