@@ -5,7 +5,7 @@ import emailjs from "emailjs-com";
 
 function FinalPage() {
   const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
+  const [nush, setEmail] = useState("");
   const [discord, setDiscord] = useState("");
   const [experienta, setExperienta] = useState("");
 
@@ -16,7 +16,7 @@ function FinalPage() {
     const templateID = "template_dd1upta";
     const templateParams = {
       name: name,
-      email: email,
+      nush: nush,
       discord: discord,
       experienta: experienta,
     };
