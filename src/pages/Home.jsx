@@ -27,7 +27,7 @@ function Home() {
                 onInit={(type) => {
                   type
                     .typeString(
-                      "Bine ai venit la Scavenger hunt-ul organizat de Thobor"
+                      "Bine ai venit la Scavenger Hunt-ul organizat de Thobor"
                     )
                     .start();
                 }}
