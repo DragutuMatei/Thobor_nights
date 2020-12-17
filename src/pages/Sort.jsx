@@ -16,11 +16,11 @@ function Sort() {
   const [filterMarime, setFilterMarime] = useState(0);
   const [filterDate, setFilterDate] = useState("any");
 
-    function filtrare(data) {
+  function filtrare(data) {
     return data.filter((e) => {
-        return (
+      return (
         (filterName !== "any" ? e.name === filterName : e.name !== "any") &&
-        (filterMarime  !== 0 ? e.marime === filterMarime : e.marime !== 0) &&
+        (filterMarime !== 0 ? e.marime === filterMarime : e.marime !== 0) &&
         (filterDate !== "any" ? e.data === filterDate : e.data !== "any") &&
         (filterArr !== "any" ? e.extensie === filterArr : e.extensie !== "any")
       );
@@ -41,7 +41,9 @@ function Sort() {
         >
           <Back />
           <div className="cerinta" style={{ margin: "20px" }}>
-            Afla linkul pentru urmatorul nivel!
+            Acum Robik ne-a ascuns informațiile în unul dintre aceste foldere.
+            Ai posibilitatea de a le sorta pe anumite categorii pentru a le
+            testa mai repede. Spor la căutat.
           </div>
           <div className="re">
             <div className="filters">
@@ -120,7 +122,7 @@ function Sort() {
           </div>
         </div>
       )}
-      <Help text="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit blanditiis quae ex. Minus nulla aut id est, eveniet officiis corporis excepturi aliquid labore iure ipsa harum suscipit quaerat praesentium. Facere!" />
+      <Help text="Click pur si simplu pe unul dintre foldere, butoanele de sortare e pentru a verifica doar o anumita grupa de fisiere. Succes în găsirea fișierului" />
     </>
   );
 }

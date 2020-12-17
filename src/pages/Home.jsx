@@ -54,7 +54,14 @@ function Home() {
         <div className="optiuni bac">
           <div className="start o">
             <h2>
-              <Link to="/GasesteLinkul">Start</Link>
+              <Link
+                to="/GasesteLinkul"
+                onClick={() => {
+                  window.sessionStorage.setItem("Start", "true");
+                }}
+              >
+                Start
+              </Link>
             </h2>
           </div>
           <div className="instructiuni o">

@@ -1,6 +1,7 @@
 import React from "react";
 import ImageMapper from "react-image-mapper";
 import Back from "../components/Back";
+import Counter from "../components/Counter";
 import Help from "../components/Help";
 
 function GasesteLinkul() {
@@ -465,6 +466,7 @@ function GasesteLinkul() {
   return (
     <>
       <Back />
+      <Counter />
       <h1
         style={{
           position: "absolute",

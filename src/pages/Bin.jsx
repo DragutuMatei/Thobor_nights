@@ -191,9 +191,7 @@ function Bin() {
 - 01100011 ( prima coloana, prima jumătate ) = "c"
 - 01101111 ( prima coloana, a 2-a jumătate ) = "o"
 Succes la căutarea textului.
-P.S. poți folosi un decryptor online. Dupa ce ai găsit mesajul ascuns verifica în consola (folosind inspect element ca în nivelel anteriore ) pentru a afla codul suplimentar pentru urmatorul nivel.
-
-console.log();
+P.S. poți folosi un decryptor online. Dupa ce ai găsit mesajul ascuns verifica în consola (folosind inspect element ca în nivelel anteriore ) pentru a afla codul suplimentar pentru urmatorul nivel. 
 '
       />
     </>

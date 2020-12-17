@@ -5,6 +5,17 @@ import Help from "../components/Help";
 function Bilet() {
   const [src, setSrc] = useState(require("../img/nu.png").default);
   const [text, setText] = useState("");
+  const [cod, setCode] = useState(makeid(5));
+
+  function makeid(length) {
+    var result           = '';
+    var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    var charactersLength = characters.length;
+    for ( var i = 0; i < length; i++ ) {
+       result += characters.charAt(Math.floor(Math.random() * charactersLength));
+    }
+    return result;
+ }
 
   const submit = () => {
     const ras = text
@@ -15,8 +26,8 @@ function Bilet() {
       .filter((e) => e.trim().length)
       .join("");
     if (ras === "aratacodul") {
-      console.log("XJKASB");
-    } else if (ras === "xjkasb") {
+      console.log(cod);
+    } else if (ras === cod.toLowerCase()) {
       window.sessionStorage.setItem("Bilet", "true");
       window.location.pathname = "/FinalPage";
     } else {

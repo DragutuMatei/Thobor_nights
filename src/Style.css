@@ -521,10 +521,8 @@ html {
 }
 
 .fullPage .cheie {
-  width: calc(100vw - 150px);
+  width: 100vw;
   min-height: 750px;
-  border: #75c60b 5px solid;
-  border-radius: 20px;
 }
 
 .fullPage .cheie img {
@@ -567,6 +565,10 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.fullPage .codul svg {
+  margin: 5px;
 }
 
 .fullPage .imagi {

@@ -109,7 +109,7 @@ function Vedere() {
                 <circle cx="150" cy="150" r="150" fill="#E8857C" />
                 <path
                   d="M161.258 200H148.18V113.305L121.953 122.938V111.125L159.219 97.1328H161.258V200Z"
-                  fill="#E8887F"
+                  fill="#e38178"
                 />
               </svg>
 
@@ -196,7 +196,7 @@ function Vedere() {
               ) : null}
             </div>
           </div>
-          <Help text="ksajdbkasjbdkasj dkjaskdbkas dkasbd kasbd kabkb ksajdbkasjbdkasj dkjaskdbkas dkasbd kasbd kabkb ksajdbkasjbdkasj dkjaskdbkas dkasbd kasbd kabkb ksajdbkasjbdkasj dkjaskdbkas dkasbd kasbd kabkb ksajdbkasjbdkasj dkjaskdbkas dkasbd kasbd kabkb ksajdbkasjbdkasj dkjaskdbkas dkasbd kasbd kabkb ksajdbkasjbdkasj dkjaskdbkas dkasbd kasbd kabkb ksajdbkasjbdkasj dkjaskdbkas dkasbd kasbd kabkb ksajdbkasjbdkasj dkjaskdbkas dkasbd kasbd kabkb ksajdbkasjbdkasj dkjaskdbkas dkasbd kasbd kabkb ksajdbkasjbdkasj dkjaskdbkas dkasbd kasbd kabkb ksajdbkasjbdkasj dkjaskdbkas dkasbd kasbd kabkb ksajdbkasjbdkasj dkjaskdbkas dkasbd kasbd kabkb ksajdbkasjbdkasj dkjaskdbkas dkasbd kasbd kabkb " />
+          <Help text="Găsește codul ascuns în bilele vizuale, acestea nu sunt în ordine deci tu va trebui să le găsești ordinea." />
         </>
       )}
     </>

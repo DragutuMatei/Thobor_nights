@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Back from "../components/Back";
+import Counter from "../components/Counter";
 import Help from "../components/Help";
 
 function Steaguri() {
@@ -50,6 +51,7 @@ function Steaguri() {
               padding: "0 100px",
             }}
           >
+            <Counter/>
             <Back />
             <div className="cerinta">
               De parcă ascunderea informațiilor nu erau de ajuns, acum ni le-a

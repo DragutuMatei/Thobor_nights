@@ -73,7 +73,7 @@ function Coor() {
             <div className="cerinta">
               Observăm că Robik s-a distrat cu informațiile noastre, ne-a
               codificat întreaga secțiune, si avem nevoie de ajutorul tau pentru
-              a afla ajunge la următorul nivel.
+              a ajunge la următorul nivel.
             </div>
             <div className="after_big">
               <div className="after_medium">

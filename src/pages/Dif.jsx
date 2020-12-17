@@ -2,16 +2,21 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Back from "../components/Back";
 import Help from "../components/Help";
- 
 
 function Dif() {
   const [drag, setgrag] = useState(false);
   const [x, setX] = useState(0);
   const [y, setY] = useState(0);
+  const [top, getTop] = useState(window.innerWidth < 1280 ? 640 : 630);
   const [style, setStyle] = useState({
     left: 508,
-    top: 591,
+    top: top,
   });
+
+  window.onresize = () => {
+    getTop(window.innerWidth < 1280 ? 650 : 630);
+  }
+
 
   const _dragStart = (e) => {
     setX(e.screenX - e.currentTarget.getBoundingClientRect().left);
@@ -50,8 +55,9 @@ function Dif() {
             }}
           >
             <Back />
-            <div className="cerinta" style={{ margin: "100px" }}>
-              Gaseste diferenta
+            <div className="cerinta" style={{ margin: "100px 0 50px 0", height: 150, overflow: 'hidden' }}>
+              Robik ne-a ascuns urmatoarea etapă sub diferența dintre aceste
+              poze, ajută-ne să o găsim.
             </div>
             <div className="images" style={{ margin: "10px" }}>
               <div className="left" id="container">
@@ -70,11 +76,11 @@ function Dif() {
                   style={style}
                   className="im"
                 />
-                <Link
+                <div
                   style={{
                     position: "absolute",
                     left: 520,
-                    top: 605,
+                    top: 655,
                     width: 20,
                     fontSize: 10,
                     wordBreak: "keep-all",
@@ -82,18 +88,18 @@ function Dif() {
                   }}
                   onClick={() => {
                     window.sessionStorage.setItem("Dif", "true");
+                    window.location.pathname = "/Bule";
                   }}
-                  to="/Bule"
                 >
                   Urmatorul nivel
-                </Link>
+                </div>
               </div>
               <div className="right">
                 <img src={require("../img/cu.jpg").default} alt="" />
               </div>
             </div>
-            <Help text="nu este" />
           </div>
+          <Help text="O dată ce ai găsit diferența încearcă să o muți de pe poza. Acolo vei găsi link-ul spre următorul nivel." />
         </>
       )}
     </>

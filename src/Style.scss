@@ -419,10 +419,8 @@ html {
   }
 
   .cheie {
-    width: calc(100vw - 150px);
+    width: 100vw;
     min-height: 750px;
-    border: #75c60b 5px solid;
-    border-radius: 20px;
 
     img {
       width: 150px;
@@ -453,6 +451,9 @@ html {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    svg {
+      margin: 5px;
+    }
   }
 
   .imagi {
@@ -488,6 +489,10 @@ html {
     }
   }
 }
+
+// .exercitii {
+
+// }
 
 @media screen and (max-width: 1300px) {
   .fullPage .images {
