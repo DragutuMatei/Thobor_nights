@@ -625,6 +625,104 @@ html {
      object-fit: contain;
 }
 
+.fullPage .titlu {
+  margin-top: 100px;
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  color: #75c60b;
+  margin-bottom: 20px;
+}
+
+.fullPage .form {
+  width: 80vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px 0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.fullPage .form .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 500px;
+  position: relative;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.fullPage .form .left .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.fullPage .form .left .row input {
+  text-indent: 10px;
+  width: 250px;
+  padding: 10px;
+  border-radius: 20px;
+  outline: none;
+  border: 3px solid #75c60b;
+}
+
+.fullPage .form .left .row h3 {
+  position: relative;
+  font-size: 20px;
+  color: #f1f1f1;
+}
+
+.fullPage .form .left .row button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  background: #75c60b;
+  color: #f1f1f1;
+  font-size: 20px;
+  cursor: pointer;
+  outline: none;
+}
+
+.fullPage .form .right {
+  width: auto;
+  height: auto;
+}
+
+.fullPage .form .right textarea {
+  outline: none;
+  width: 400px;
+  height: 300px;
+  padding: 10px;
+  border: 3px solid #75c60b;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
 @media screen and (max-width: 1300px) {
   .fullPage .images {
     -webkit-box-orient: vertical;
