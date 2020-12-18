@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Back from "../components/Back";
-import { Link } from "react-router-dom";
 import Help from "../components/Help";
 
 function Bin() {
@@ -19,7 +18,7 @@ function Bin() {
     if (txt === "console.log();") {
       setSh(true);
       console.log('Codul este "ziua de nastere a lui Bill Gates"');
-    } else if (txt === "ziuadenasterealuibillgates" && sh) {
+    } else if (txt === "ziuadenasterealuibillgates" ) {
       alert("Raspunsul este corect!");
       window.sessionStorage.setItem("Bin", "true");
       window.location.pathname = "/Sort";
