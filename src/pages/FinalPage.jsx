@@ -8,6 +8,7 @@ function FinalPage() {
   const [nush, setEmail] = useState("");
   const [discord, setDiscord] = useState("");
   const [experienta, setExperienta] = useState("");
+  const [send, setsend] = useState(false);
 
   init("user_F1FXOrwoiGSWERQpZLjlR");
 
@@ -23,6 +24,7 @@ function FinalPage() {
     if (name === "" || nush === "" || discord === "" || experienta === "") {
       alert("Toate casetele sunt obligatorii!");
     } else {
+      setsend(true);
       emailjs
         .send(
           serviceID,
@@ -77,7 +79,7 @@ function FinalPage() {
                   <input
                     required
                     type="text"
-                    placeholder="Numele"
+                    placeholder="Numele*"
                     onChange={(e) => {
                       setName(e.target.value);
                     }}
@@ -87,7 +89,7 @@ function FinalPage() {
                   <input
                     required
                     type="email"
-                    placeholder="Email"
+                    placeholder="Email*"
                     onChange={(e) => {
                       setEmail(e.target.value);
                     }}
@@ -97,14 +99,19 @@ function FinalPage() {
                   <input
                     required
                     type="text"
-                    placeholder="Discord nickname"
+                    placeholder="Discord nickname*"
                     onChange={(e) => {
                       setDiscord(e.target.value);
                     }}
                   />
                 </div>
-                <div className="row">
-                  <button onClick={submit}>Submit</button>
+                <div className="row" style={{justifyContent:'center'}}>
+                  {
+                    send && (
+                      <i style={{fontSize:40, color:"#75c60b"}} className="fa fa-refresh fa-spin"></i>
+                    )
+                  }
+                  <button style={{margin:"20px"}} onClick={submit}>Submit</button>
                 </div>
               </div>
               <div className="right">
@@ -113,7 +120,7 @@ function FinalPage() {
                   onChange={(e) => {
                     setExperienta(e.target.value);
                   }}
-                  placeholder="Cum ți s-a parut aceasta experiență?"
+                  placeholder="Cum ți s-a parut aceasta experiență?*"
                 ></textarea>
               </div>
             </div>
