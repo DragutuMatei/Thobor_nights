@@ -17,7 +17,7 @@ function Bin() {
       .join("");
     if (txt === "console.log();") {
       setSh(true);
-      console.log('Codul este "ziua de nastere a lui Bill Gates"');
+      console.warn('Codul este "ziua de nastere a lui Bill Gates"');
     } else if (txt === "ziuadenasterealuibillgates" ) {
       alert("Raspunsul este corect!");
       window.sessionStorage.setItem("Bin", "true");
