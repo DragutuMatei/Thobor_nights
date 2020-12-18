@@ -20,7 +20,7 @@ function FinalPage() {
       discord: discord,
       experienta: experienta,
     };
-    if (name === "" && nush === "" && discord === "" && experienta === "") {
+    if (name === "" || nush === "" || discord === "" || experienta === "") {
       alert("Toate casetele sunt obligatorii!");
     } else {
       emailjs
