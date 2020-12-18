@@ -16,20 +16,30 @@ function FinalPage() {
     const templateID = "template_dd1upta";
     const templateParams = {
       name: name,
-      nush:nush,
+      nush: nush,
       discord: discord,
       experienta: experienta,
     };
-
-    emailjs.send(serviceID, templateID, templateParams, "user_F1FXOrwoiGSWERQpZLjlR").then(
-      () => {
-        alert("Trimis!");
-      },
-      (err) => {
-        alert(JSON.stringify(err));
-      }
-    );
- 
+    if (name === "" && nush === "" && discord === "" && experienta === "") {
+      alert("Toate casetele sunt obligatorii!");
+    } else {
+      emailjs
+        .send(
+          serviceID,
+          templateID,
+          templateParams,
+          "user_F1FXOrwoiGSWERQpZLjlR"
+        )
+        .then(
+          () => {
+            alert("Trimis!");
+            window.location.reload();
+          },
+          (err) => {
+            alert(JSON.stringify(err));
+          }
+        );
+    }
   };
 
   return (
