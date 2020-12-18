@@ -12,6 +12,7 @@ function FinalPage() {
   init("user_F1FXOrwoiGSWERQpZLjlR");
 
   const submit = () => {
+    console.log("ad")
     const serviceID = "service_0mpw36j";
     const templateID = "template_dd1upta";
     const templateParams = {
