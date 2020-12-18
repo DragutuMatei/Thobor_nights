@@ -16,12 +16,12 @@ function FinalPage() {
     const templateID = "template_dd1upta";
     const templateParams = {
       name: name,
-      nush: nush,
+      nush:nush,
       discord: discord,
       experienta: experienta,
     };
 
-    emailjs.send(serviceID, templateID, templateParams).then(
+    emailjs.send(serviceID, templateID, templateParams, "user_F1FXOrwoiGSWERQpZLjlR").then(
       () => {
         alert("Trimis!");
       },
@@ -29,6 +29,7 @@ function FinalPage() {
         alert(JSON.stringify(err));
       }
     );
+ 
   };
 
   return (
@@ -60,7 +61,7 @@ function FinalPage() {
                 completezi formularul de mai jos.
               </h4>
             </div>
-            <form className="form">
+            <div className="form">
               <div className="left">
                 <div className="row">
                   <input
@@ -105,7 +106,7 @@ function FinalPage() {
                   placeholder="Cum ți s-a parut aceasta experiență?"
                 ></textarea>
               </div>
-            </form>
+            </div>
             <img
               className="imagineBack"
               src={require("../img/backfinal.png").default}
