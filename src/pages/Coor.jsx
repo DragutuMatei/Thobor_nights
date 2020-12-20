@@ -27,6 +27,7 @@ function Coor() {
   function test() {
     const cod = parseInt(prompt("Codul este:", ""));
     if (cod === 61561561561560669420207) {
+
       setLink(window.location.pathname.replace("Coor", "FindTheWords"));
       setShow(true);
       alert(

@@ -80,7 +80,7 @@ function Steaguri() {
                 <img src={src.n} alt="" />
                 <img src={src.e} alt="" />
                 <img src={src.l} alt="" />
-                <img src={src.p} alt="" />
+                <img src={src.e} alt="" />
               </div>
             </div>
             <div className="rasp">
